@@ -72,8 +72,8 @@ public class Numeros {
      *
      * @param caminho O caminho do arquivo de onde os números serão lidos.
      */
-    public static void lerDoArquivo(String caminho) {
-        File arquivo = new File(caminho);
+    public static void lerDoArquivo(String nomeArquivo) {
+        File arquivo = new File(nomeArquivo);
         try (BufferedReader leitor = new BufferedReader(new FileReader(arquivo))) {
             String linha;
             System.out.println("Numeros lidos do arquivo:");
