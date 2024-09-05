@@ -12,17 +12,17 @@ public class Principal {
         // Funções para ordenar usando os métodos
         Runnable ordenarBolha = () -> {
             Ordenacao.bolha(alunosBolha);
-            System.out.println("Ordenação por Bolha concluída.");
+            System.out.println("Ordenacao por Bolha concluida.");
         };
 
         Runnable ordenarSelecao = () -> {
             Ordenacao.selecao(alunosSelecao);
-            System.out.println("Ordenação por Seleção concluída.");
+            System.out.println("Ordenacao por Selecao concluida.");
         };
 
         Runnable ordenarInsercao = () -> {
             Ordenacao.insercao(alunosInsercao);
-            System.out.println("Ordenação por Inserção concluída.");
+            System.out.println("Ordenacao por Insercao concluida.");
         };
 
         Runnable ordenarSort = () -> {
@@ -30,7 +30,7 @@ public class Principal {
                 int compare = a1.getNome().compareTo(a2.getNome());
                 return compare == 0 ? Integer.compare(a1.getIdade(), a2.getIdade()) : compare;
             });
-            System.out.println("Ordenação com sort do Java concluída.");
+            System.out.println("Ordenacao com sort do Java concluida.");
         };
 
         // criando threads para ordenação
